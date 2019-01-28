@@ -8,8 +8,6 @@ class MP3Importer
   end
 
   def import(filename)
-    song = self.new_by_filename
-    song.title = filename.split(" - ")[1]
-    song
+    
   end
 end

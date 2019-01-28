@@ -22,7 +22,7 @@ class Artist
   end
 
   def print_songs
-    @songs.each |key, value|
+    @songs.each do |key, value|
       if @songs[key] == @name
         puts value
       end

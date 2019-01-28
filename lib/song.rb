@@ -1,7 +1,6 @@
 require 'pry'
 class Song
   attr_accessor :name, :artist
-  @@all = []
 
   def initialize(name)
     @name = name
@@ -12,7 +11,7 @@ class Song
     artist = file_name.split(" - ")[0]
     song = self.new(name)
     artist_ob = Artist.new(artist)
-    @@all << artist_ob
+    song.artist = artist_ob
   end
 
 end

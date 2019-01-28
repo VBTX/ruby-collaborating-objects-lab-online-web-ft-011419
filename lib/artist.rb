@@ -19,7 +19,7 @@ class Artist
     if self.name == false
       self.new(name)
     else
-      self.name
+      self.name(name)
     end
   end
 

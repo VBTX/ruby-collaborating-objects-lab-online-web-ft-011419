@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
   attr_accessor :path
   def initialize(path)
@@ -5,7 +7,8 @@ class MP3Importer
   end
 
   def files
-   File.basename(@path, ".*")
+   @path.split(//|."/)
+   binding.pry
   end
 
   def import

@@ -43,8 +43,4 @@ class Artist
     end
   end
 
-  def self.size
-    @@all.count
-  end
-
 end

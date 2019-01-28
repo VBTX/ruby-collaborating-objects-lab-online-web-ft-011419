@@ -22,6 +22,7 @@ class Artist
   end
 
   def print_songs
-    puts @songs
+    @songs.each do |name|
+      puts name
   end
 end

@@ -1,5 +1,4 @@
 
-require 'pry'
 class MP3Importer
   attr_accessor :path
   def initialize(path)
@@ -10,7 +9,6 @@ class MP3Importer
    puts Dir[@path+"/*.mp3"].map { |file| file.split("/").last } #matches all that
    #begin with the instancw path plus mp3 ending, then picks only the last
    #element because that is where the info is stored
-   binding.pry
   end
 
   def import

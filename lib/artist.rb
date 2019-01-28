@@ -20,7 +20,7 @@ class Artist
     if (self.name.nil?)
       self.name = Artist.new(name)
     else
-      class
+      Artist.name = name
     end
   end
 

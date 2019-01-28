@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-   puts Dir[@path+"/*.mp3"].map { |file| file.split("/").last } #matches all that
+   Dir[@path+"/*.mp3"].map { |file| file.split("/").last } #matches all that
    #begin with the instancw path plus mp3 ending, then picks only the last
    #element because that is where the info is stored
   end

@@ -20,8 +20,6 @@ class Artist
       self.name = Artist.new(name)
     else
       self.name = name
-end
-
     end
   end
 

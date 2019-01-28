@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-   @path.split(//|."/)
+   @path.split(//|./)
    binding.pry
   end
 

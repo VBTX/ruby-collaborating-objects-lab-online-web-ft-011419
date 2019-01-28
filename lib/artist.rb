@@ -12,7 +12,7 @@ class Artist
   end
 
   def save
-    Song.all << self
+    @@all << self
   end
 
   def self.find_or_create_by_name(name)

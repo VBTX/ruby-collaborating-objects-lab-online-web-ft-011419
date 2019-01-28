@@ -5,11 +5,11 @@ class Song
     @name = name
   end
 
-  def artist=(name)
+  def artist=(art)
     if self.artist == false
-      self.artist = Artist.new(name)
+      self.artist = art
     else
-      self.artist = name
+      self.artist = art
     end
   end
 

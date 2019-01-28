@@ -8,7 +8,8 @@ class MP3Importer
    filename = @path.split("/")
   end
 
-  def import(filename)
+  def import
+    files.each {|file| Song.new_by_filename(file)}
 
   end
 end
